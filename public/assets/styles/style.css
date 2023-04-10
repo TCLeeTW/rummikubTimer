@@ -1,0 +1,39 @@
+/* Global */
+body{
+    background-color:#0D47A1  ;
+}
+.section{
+
+    margin: 20px auto;
+    text-align: center;
+}
+
+
+/* Header */
+header{
+    margin: 20px auto;
+}
+header h1{
+    color:#FFC107 
+}
+
+/* SetTime */
+
+
+/* CountDown */
+.full-height{
+    height:350px;
+}
+
+
+.time{
+    margin:auto;
+    margin-bottom: 25px;
+    font-size: 120px;
+    color: #FFA000 ;
+    font-weight: 700;
+}
+
+.btn-start{
+    margin:auto;
+}

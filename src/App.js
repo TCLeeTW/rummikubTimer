@@ -1,23 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import React,{useState} from "react";
+import CountDown from "./sections/CountDown";
+import Header from "./sections/Header";
+import SetTime from "./sections/SetTime";
 
 function App() {
+  const [time, setTime] = useState(120);
+
+  function handleTimeChange(newTime) {
+    setTime(newTime);
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="background">
+      <Header/>
+      <SetTime 
+      onTimeChange={handleTimeChange}/>
+      <CountDown 
+      time={time}/>
     </div>
   );
 }
